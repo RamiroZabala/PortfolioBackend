@@ -21,26 +21,30 @@ public class PortfolioApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 
 				registry.addMapping("/api/get/**")
-					.allowedOrigins("http://localhost:4200")
+					//.allowedOrigins("http://localhost:4200")
+					.allowedOrigins("*")
 					.allowedMethods("GET")
 					.allowedHeaders("*")
 					.allowCredentials(false);
 
 				registry.addMapping("/api/auth/**")
-					.allowedOrigins("http://localhost:4200")
+					//.allowedOrigins("http://localhost:4200")
+					.allowedOrigins("*")
 					.allowedMethods("GET", "POST", "PUT", "DELETE")
 					.allowedHeaders("*")
 					//.exposedHeaders("Authorization")
 					.allowCredentials(true);
 
 				registry.addMapping("/api/delete/**")
-					.allowedOrigins("http://localhost:4200")
+					//.allowedOrigins("http://localhost:4200")
+					.allowedOrigins("*")
 					.allowedMethods("DELETE")
 					.allowedHeaders("*")
 					.allowCredentials(false);
 
 				registry.addMapping("/api/new/**")
-					.allowedOrigins("http://localhost:4200")
+					//.allowedOrigins("http://localhost:4200")
+					.allowedOrigins("*")
 					.allowedMethods("POST")
 					.allowedHeaders("*")
 					.allowCredentials(false);
