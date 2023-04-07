@@ -1,27 +1,22 @@
-node_modules
+HELP.md
 # Carpetas
-node_modules/
-dist/
-tmp/
-logs/
-coverage/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!target/portfolio-0.0.1-SNAPSHOT.jar
 
-# Archivos
-*.log
-*.pid
-*.swp
-*.lock
-*.DS_Store
-*.idea
+## 
+.apt-generated
+.classpath
+.factorypath
+.project
+.settings
+.sts4-cache
+
+##
+.idea
+*.iws
 *.iml
-.idea/
-*.jks
-*.keystore
-*.p12
-*.pfx
-.env
-.env.*
-.e2e.ts
-.e2e.js
-.e2e-spec.ts
-.e2e-spec.js
+*.ipr
+
