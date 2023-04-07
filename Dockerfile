@@ -15,4 +15,4 @@ EXPOSE 8080
 #ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar backend.jar
 
 
-ENTRYPOINT ["java", "-jar", "/backend.jar"]
+ENTRYPOINT ["java", "-jar", "backend.jar"]
