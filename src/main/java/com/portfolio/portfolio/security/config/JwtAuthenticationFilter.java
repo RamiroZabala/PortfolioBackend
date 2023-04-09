@@ -33,7 +33,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     ///////// VA????
     //response.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
     //response.setHeader("Access-Control-Allow-Origin", "*");
-    response.setHeader("Access-Control-Allow-Origin", "https://portfolioweb-argprog.web.app");
+    response.setHeader("Access-Control-Allow-Origin", "https://portfolioweb-argprog.web.app/");
     response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     response.setHeader("Access-Control-Allow-Header", "*");
     ////////////////
