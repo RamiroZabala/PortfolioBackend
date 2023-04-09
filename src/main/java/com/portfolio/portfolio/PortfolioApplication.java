@@ -32,8 +32,9 @@ public class PortfolioApplication {
 					.allowedOrigins("*")
 					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
-					//.exposedHeaders("Authorization")
-					.allowCredentials(true);
+					.exposedHeaders("Authorization")
+					.allowCredentials(true)
+					.maxAge(3600);
 
 				registry.addMapping("/api/delete/**")
 					//.allowedOrigins("http://localhost:4200")
