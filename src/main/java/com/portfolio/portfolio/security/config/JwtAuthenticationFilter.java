@@ -32,12 +32,17 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
   ) throws ServletException, IOException {
     ///////// VA????
     //response.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
-    response.setHeader("Access-Control-Allow-Origin", "*");
+    //response.setHeader("Access-Control-Allow-Origin", "*");
     //response.setHeader("Access-Control-Allow-Origin", "https://portfolioweb-argprog.web.app");
     //response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, DELETE");
-    response.setHeader("Access-Control-Allow-Methods", "*");
-    response.setHeader("Access-Control-Allow-Headers", "*");
-    response.setHeader("Access-Control-Max-Age", "3600");
+    //response.setHeader("Access-Control-Allow-Methods", "*");
+    //response.setHeader("Access-Control-Allow-Headers", "*");
+    //response.setHeader("Access-Control-Max-Age", "3600");
+
+    response.addHeader("Access-Control-Allow-Origin", "*");
+    response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    response.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with");
+    response.addHeader("Access-Control-Max-Age", "3600");
 
     ////////////////
     final String authHeader = request.getHeader("Authorization");

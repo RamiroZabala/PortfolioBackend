@@ -34,11 +34,11 @@ public class AuthenticationController {
       return ResponseEntity.ok(service.authenticate(request));
   }
 
-  @RequestMapping(method = RequestMethod.OPTIONS)
+  /*@RequestMapping(method = RequestMethod.OPTIONS)
   public void corsHeaders(HttpServletResponse response) {
     response.addHeader("Access-Control-Allow-Origin", "*");
     response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     response.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with");
     response.addHeader("Access-Control-Max-Age", "3600");
-  }
+  }*/
 }
