@@ -33,7 +33,7 @@ public class SecurityConfiguration {
         .authorizeHttpRequests()
           .requestMatchers(HttpMethod.GET, "/api/get/**").permitAll()
           .requestMatchers("/api/auth/**").permitAll()
-          .requestMatchers(HttpMethod.OPTIONS, "*").permitAll()
+          //.requestMatchers(HttpMethod.OPTIONS, "*").permitAll()
           .anyRequest().authenticated()
         .and()
         .sessionManagement()
