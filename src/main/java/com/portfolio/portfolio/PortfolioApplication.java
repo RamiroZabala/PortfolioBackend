@@ -32,7 +32,7 @@ public class PortfolioApplication {
 					.allowedOrigins("*")
 					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
-					.exposedHeaders("Authorization")
+					//.exposedHeaders("Authorization")
 					.allowCredentials(true);
 
 				registry.addMapping("/api/delete/**")
