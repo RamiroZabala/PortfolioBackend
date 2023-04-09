@@ -30,7 +30,7 @@ public class PortfolioApplication {
 				registry.addMapping("/api/auth/**")
 					//.allowedOrigins("http://localhost:4200")
 					.allowedOrigins("*")
-					.allowedMethods("GET", "POST", "PUT", "DELETE")
+					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
 					//.exposedHeaders("Authorization")
 					.allowCredentials(true);
