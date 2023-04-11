@@ -16,6 +16,10 @@ public class OptionsRequestController {
     public ResponseEntity<?> handleOptionsRequest() {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Allow", "GET, POST, PUT, DELETE");
+        headers.add("Access-Control-Allow-Origin", "https://portfolioweb-argprog.web.app");
+        headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        headers.add("Access-Control-Allow-Headers", "Authorization, Content-Type");
+        headers.add("Access-Control-Max-Age", "3600");
         return new ResponseEntity<>(headers, HttpStatus.NO_CONTENT);
     }
 }
