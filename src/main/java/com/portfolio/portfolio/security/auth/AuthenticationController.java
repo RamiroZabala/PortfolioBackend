@@ -2,6 +2,8 @@ package com.portfolio.portfolio.security.auth;
 
 import lombok.RequiredArgsConstructor;
 
+import org.springframework.http.HttpHeaders;
+//import org.springframework.http.HttpStatus;
 //import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 //import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@RequestMapping("/api/auth")
-@RequestMapping(value="/api/auth", method={RequestMethod.OPTIONS, RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT})
+@RequestMapping("/api/auth")
+//@RequestMapping(value="/api/auth", method={RequestMethod.OPTIONS, RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT})
 @RequiredArgsConstructor
 
 public class AuthenticationController {
@@ -21,17 +23,21 @@ public class AuthenticationController {
   private final AuthenticationService service;
 
   @PostMapping("/register")
-  public ResponseEntity<AuthenticationResponse> register(
-      @RequestBody RegisterRequest request
-  ) {
+  public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request) {
     return ResponseEntity.ok(service.register(request));
   }
 
-  //@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS })
+  @RequestMapping(method=RequestMethod.POST)
   @PostMapping("/authenticate")
-  public ResponseEntity<AuthenticationResponse> authenticate(
-      @RequestBody AuthenticationRequest request
-  ) {
+  public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
       return ResponseEntity.ok(service.authenticate(request));
   }
+
+  @RequestMapping(method = RequestMethod.OPTIONS, value = "/authenticate")
+  public ResponseEntity<?> handleOptionRequest() {
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("Allow", "OPTIONS, POST");
+    return ResponseEntity.ok().headers(headers).build();
+}
+
 }
