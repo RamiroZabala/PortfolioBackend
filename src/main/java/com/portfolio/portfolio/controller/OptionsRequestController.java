@@ -15,8 +15,8 @@ public class OptionsRequestController {
     @RequestMapping(value = "/authenticate", method = RequestMethod.OPTIONS)
     public ResponseEntity<?> handleOptionsRequest() {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Allow", "GET, POST, PUT, DELETE");
-        headers.add("Access-Control-Allow-Origin", "https://portfolioweb-argprog.web.app");
+        headers.add("Allow", "GET, POST, PUT, DELETE, OPTIONS");
+        headers.add("Access-Control-Allow-Origin", "*");
         headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         headers.add("Access-Control-Allow-Headers", "Authorization, Content-Type");
         headers.add("Access-Control-Max-Age", "3600");
