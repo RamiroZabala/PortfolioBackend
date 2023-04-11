@@ -23,6 +23,7 @@ com/portfolio/portfolio/controller/Controller.class
 com/portfolio/portfolio/service/WorkProjectService.class
 com/portfolio/portfolio/security/config/JwtAuthenticationFilter.class
 com/portfolio/portfolio/service/ISoftSkillService.class
+com/portfolio/portfolio/security/config/ApplicationConfig$DispatcherServletBeanPostProcessor.class
 com/portfolio/portfolio/security/auth/AuthenticationController.class
 com/portfolio/portfolio/security/auth/AuthenticationService.class
 com/portfolio/portfolio/repository/WorkProjectRepository.class
