@@ -2,11 +2,7 @@ package com.portfolio.portfolio.security.auth;
 
 import lombok.RequiredArgsConstructor;
 
-import org.springframework.http.HttpHeaders;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
-//import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,12 +28,5 @@ public class AuthenticationController {
   public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
       return ResponseEntity.ok(service.authenticate(request));
   }
-
-  @RequestMapping(method = RequestMethod.OPTIONS, value = "/authenticate")
-  public ResponseEntity<?> handleOptionRequest() {
-    HttpHeaders headers = new HttpHeaders();
-    headers.add("Allow", "OPTIONS, POST");
-    return ResponseEntity.ok().headers(headers).build();
-}
 
 }

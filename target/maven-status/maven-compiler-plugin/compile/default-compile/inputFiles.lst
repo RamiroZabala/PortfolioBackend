@@ -7,6 +7,8 @@
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/repository/SoftSkillRepository.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/config/JwtService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/token/Token.java
+/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/config/DispatcherServletConfigurator.java
+/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/controller/OptionsRequestController.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/EducationService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/user/User.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/token/TokenRepository.java
@@ -22,6 +24,7 @@
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/WorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/IWorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/PortfolioApplication.java
+/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/controller/OptionsRequestInterceptor.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/user/Role.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/controller/Controller.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/model/Skill.java
