@@ -23,7 +23,7 @@ public class PortfolioApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-
+/*
 				registry.addMapping("/api/get/**")
 					//.allowedOrigins("http://localhost:4200")
 					.allowedOrigins("*")
@@ -53,6 +53,8 @@ public class PortfolioApplication {
 					.allowedMethods("POST")
 					.allowedHeaders("*")
 					.allowCredentials(false);
+*/
+				registry.addMapping("/**");
 			}
 		};
 	}
