@@ -20,6 +20,7 @@
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/auth/AuthenticationRequest.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/IEducationService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/HardSkillService.java
+/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/config/SecurityConfiguration.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/WorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/IWorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/PortfolioApplication.java
