@@ -34,11 +34,11 @@ public class PortfolioApplication {
 				registry.addMapping("/api/auth/**")
 					//.allowedOrigins("http://localhost:4200")
 					.allowedOrigins("*")
-					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+					.allowedMethods("*")
 					.allowedHeaders("*")
 					//.exposedHeaders("Authorization")
-					.allowCredentials(true)
-					.maxAge(3600);
+					.allowCredentials(false);
+					//.maxAge(3600);
 
 				registry.addMapping("/api/delete/**")
 					//.allowedOrigins("http://localhost:4200")
