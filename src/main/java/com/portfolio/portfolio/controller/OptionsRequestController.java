@@ -19,7 +19,9 @@ public class OptionsRequestController {
         headers.add("Access-Control-Allow-Origin", "*");
         headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         headers.add("Access-Control-Allow-Headers", "Authorization, Content-Type");
+        headers.add("Access-Control-Allow-Credentials", "true");
         headers.add("Access-Control-Max-Age", "3600");
+
         return new ResponseEntity<>(headers, HttpStatus.NO_CONTENT);
     }
 }
