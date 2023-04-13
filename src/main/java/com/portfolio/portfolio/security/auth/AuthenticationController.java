@@ -34,13 +34,11 @@ public class AuthenticationController {
   public ResponseEntity<?> handleOptionsRequest() {
       HttpHeaders headers = new HttpHeaders();
       headers.add("Allow", "OPTIONS, POST");
-
       //headers.add("Access-Control-Allow-Origin", "*");
       //headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
       //headers.add("Access-Control-Allow-Headers", "Authorization, Content-Type");
       //headers.add("Access-Control-Allow-Credentials", "true");
       //headers.add("Access-Control-Max-Age", "3600");
-
       return ResponseEntity.ok().headers(headers).build();
   }
 

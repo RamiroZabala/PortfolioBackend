@@ -3,11 +3,11 @@ package com.portfolio.portfolio;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+//import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import com.portfolio.portfolio.controller.OptionsRequestInterceptor;
+//import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+//import com.portfolio.portfolio.controller.OptionsRequestInterceptor;
 
 
 @SpringBootApplication
@@ -37,7 +37,7 @@ public class PortfolioApplication {
 					.allowedMethods("*")
 					.allowedHeaders("*")
 					//.exposedHeaders("Authorization")
-					.allowCredentials(false);
+					.allowCredentials(false); //NOTA: allowCredentianls en "True" me daba error de CORS en solicitud OPTIONS de preflight
 					//.maxAge(3600);
 
 				registry.addMapping("/api/delete/**")
@@ -59,7 +59,7 @@ public class PortfolioApplication {
 	
 	////////////////////////////////////////////////////////////////
 	// OPTIONS REQUEST INTERCEPTOR /////////////////////////////////
-	@Configuration
+	/*@Configuration
 	public class WebMvcConfig implements WebMvcConfigurer {
 
 		@Override
@@ -67,5 +67,5 @@ public class PortfolioApplication {
 			registry.addInterceptor(new OptionsRequestInterceptor()).addPathPatterns("/**");
 		}
 
-	}
+	}*/
 }
