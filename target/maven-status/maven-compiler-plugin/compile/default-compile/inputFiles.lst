@@ -1,4 +1,5 @@
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/repository/WorkProjectRepository.java
+/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/config/JwtAuthenticationFilter.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/ISoftSkillService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/token/TokenType.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/model/Education.java
@@ -19,7 +20,6 @@
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/security/auth/AuthenticationRequest.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/IEducationService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/HardSkillService.java
-/home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/config/SecurityConfiguration.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/WorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/service/IWorkProjectService.java
 /home/ramiro/Documentos/Portfolio/Backend/src/main/java/com/portfolio/portfolio/PortfolioApplication.java

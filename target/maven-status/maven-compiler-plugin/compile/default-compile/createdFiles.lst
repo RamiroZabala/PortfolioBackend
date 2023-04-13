@@ -1,5 +1,4 @@
 com/portfolio/portfolio/security/auth/AuthenticationResponse.class
-com/portfolio/portfolio/config/SecurityConfiguration.class
 com/portfolio/portfolio/controller/OptionsRequestController.class
 com/portfolio/portfolio/config/DispatcherServletConfigurator.class
 com/portfolio/portfolio/security/config/LogoutService.class
@@ -36,6 +35,7 @@ com/portfolio/portfolio/service/IPersonaService.class
 com/portfolio/portfolio/security/config/ApplicationConfig.class
 com/portfolio/portfolio/model/Education.class
 com/portfolio/portfolio/controller/Controller.class
+com/portfolio/portfolio/security/config/JwtAuthenticationFilter.class
 com/portfolio/portfolio/service/ISoftSkillService.class
 com/portfolio/portfolio/security/auth/AuthenticationController.class
 com/portfolio/portfolio/security/auth/AuthenticationService.class
@@ -44,6 +44,6 @@ com/portfolio/portfolio/model/Persona.class
 com/portfolio/portfolio/security/token/TokenRepository.class
 com/portfolio/portfolio/repository/EducationRepository.class
 com/portfolio/portfolio/model/Skill.class
-com/portfolio/portfolio/service/EducationService.class
 com/portfolio/portfolio/security/config/JwtService.class
+com/portfolio/portfolio/service/EducationService.class
 com/portfolio/portfolio/model/SoftSkill.class
